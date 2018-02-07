@@ -77,7 +77,7 @@ Execute `ansible-playbook` cli with following options.
 ansible-playbook \
  -l localhost \
  --extra-vars=@/some/file.yml \
- playbook.yml 
+ bootstrap.yml 
 ```
 
 In case if you want to separate variable file for `ansible-vault` to protect openstack auth information.
@@ -120,13 +120,13 @@ ansible-playbook \
  --extra-vars=@/some/file.yml \
  --extra-vars=@/some/encrypted.yml \
  --ask-vault-pass \
- playbook.yml 
+ bootstrap.yml 
 ```
 
 ### `ansible-playbook` usage.
 
 ```
-Usage: ansible-playbook [options] playbook.yml [playbook2 ...]
+Usage: ansible-playbook [options] bootstrap.yml [playbook2 ...]
 ```
 Options:
 - `-l`: `-l SUBSET, --limit=SUBSET`, further limit selected hosts to an additional pattern
